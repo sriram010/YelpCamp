@@ -23,7 +23,7 @@ const campgroundRouter = require('./routes/campground');
 const reviewsRouter = require('./routes/reviews');
 const userRouter = require('./routes/user');
 
-mongoUri = 'mongodb://127.0.0.1:27017/yelp-camp';
+mongoUri = process.env.MONGO_URI;
 
 mongoose.connect(mongoUri)
     .then(() => {
