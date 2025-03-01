@@ -23,7 +23,7 @@ const campgroundRouter = require('./routes/campground');
 const reviewsRouter = require('./routes/reviews');
 const userRouter = require('./routes/user');
 
-mongoUri = process.env.MONGO_URI;
+const mongoUri = process.env.MONGO_URI;
 
 mongoose.connect(mongoUri)
     .then(() => {
